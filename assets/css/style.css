@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.border1 {
+  border: 1px solid red;
+}
+.logo-div a p {
+  font-family: "Work Sans";
+  font-size: 0.875;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.03rem;
+}
+.hero-section .container {
+  background: url("/assets/images/hero-bg-gradient.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.content-inner .content-header h2 {
+  /* font-family: "Plus Jakarta Sans"; */
+  /* font-size: 1.75rem; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 5.25rem */
+  letter-spacing: 0.0375rem;
+}
+.content-inner .content-header p {
+  font-family: "Work Sans";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.01rem;
+}
+.content-quality div p {
+  font-family: "Work Sans";
+  /* font-size: 0.875rem; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+  letter-spacing: 0.01rem;
+}
+.content-inner .content-button p {
+  font-family: "Work Sans";
+  /* font-size: 1rem; */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+  letter-spacing: 0.03rem;
+}
+.location-header h2 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.0375rem;
+}
+.location-header p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.01rem;
+}
+.counting-div .counting h2 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.0375rem;
+}
+.counting-div .counting p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.01rem;
+}
+
+.location-base-section {
+  background: url("/assets/images/booking-banner-img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 0;
+}
+.computed-tomography .container h2 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.0375rem;
+}
+.computed-tomography .container p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%;
+  letter-spacing: 0.01rem;
+}
+.ct-image-grid .ct-grid-content {
+  background: linear-gradient(
+    180deg,
+    rgba(224, 231, 255, 0) -75.2%,
+    #e0e7ff 146.7%
+  );
+}
+.ct-grid-content h3 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 2.6rem */
+  letter-spacing: 0.02rem;
+}
+
+.helped-section .container .helpe-header {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 5.25rem */
+  letter-spacing: 0.0375rem;
+}
+.grid-box h3 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 2.6rem */
+  letter-spacing: 0.02rem;
+}
+.grid-box p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 1.8rem */
+  letter-spacing: 0.01rem;
+}
+.helped-banner-content h3 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%; /* 2.6rem */
+  letter-spacing: 0.02rem;
+}
+
+.customer-review .container h2 {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 5.25rem */
+  letter-spacing: 0.0375rem;
+}
+.review-btn-box button {
+    
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+}
+.swiper-button-next::after{
+    display: none;
+}
+.swiper-button-prev::after{
+    display: none;
+}
+.prev-btn, .next-btn {
+    border: 1px solid #3F3F46;
+}
+/* #prev{
+    position: absolute;
+    top: 0;
+    right: 28rem;
+}
+
+#next{
+    position: absolute;
+    top: 0;
+    right: 23rem;
+} */
