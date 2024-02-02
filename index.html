@@ -12,35 +12,35 @@
 
 <body>
     <div class="wrapper w-full h-auto ">
-        <header class="ct-head">
-            <div class="container mx-auto flex justify-between items-center xl:py-10 sm:py-6 md:py-8 px-5 py-3 sm:px-0 ">
+        <header class="ct-head left-0 top-0 w-full z-50 default-nav">
+            <div class="container mx-auto flex justify-between items-center xl:py-10 sm:py-6 md:py-8 px-4 py-5  ">
                 <div class="logo-div flex xl:gap-10 gap-4">
-                    <a href="#" class="sm:w-0 w-[8rem]">
+                    <a href="#" class="sm:w-auto w-[8rem]">
                         <img src="/assets/svg/expert-mri.svg" class="" alt="expert-mri logo">
                     </a>
-                    <a href="#" class="flex items-center justify-center gap-[0.38rem]">
+                    <a href="#" class=" items-center justify-center gap-[0.38rem] hidden md:flex">
                         <img src="/assets/svg/location-icon.svg" alt="location icon" class="">
                         <p class="text-[#3F3F46] text-[1rem]"> USA</p>
                     </a>
                 </div>
-                <button class="flex items-center gap-[0.5rem] rounded-[2.6rem] sm:px-[2.5rem] sm:py-[0.88rem] px-[.625rem] py-[5px] bg-[#2563EB]">
+                <button
+                    class="flex items-center gap-[0.5rem] rounded-[2.6rem] sm:px-[2.5rem] sm:py-[0.88rem] px-[1.25rem] py-[.75rem] bg-[#2563EB]">
                     <img src="/assets/svg/Call.svg" alt="head phone logo" class="sm:w-auto w-[1.125rem]">
-                    <p class="text-[#fff] sm:text-[1rem] text-[0.7rem]">(877) 674-8888</p>
+                    <p class="text-[#fff] sm:text-[1rem] text-[.75rem]">(877) 674-8888</p>
                 </button>
 
             </div>
         </header>
         <main class="w-full h-auto ">
-            <section class="hero-section sm:mb-[6.25rem] mb-12 sm:px-0 px-[1.2rem]">
-                <div class="container mx-auto flex lg:flex-row lg:gap-0 gap-8 flex-col justify-between items-center ">
+            <section class="hero-section sm:mb-[6.25rem] mb-10 ">
+                <div class="container mx-auto flex lg:flex-row lg:gap-0 gap-8 flex-col justify-between md:items-center items-start">
                     <div class="hero-content flex items-center">
                         <div class="content-inner flex flex-col gap-6 xl:mt-6 lg:mt-[6.5rem]">
                             <div class="content-header flex flex-col gap-4">
-                                <h2
-                                    class="lg:absolute  2xl:top-[13rem] xl:top-[11rem] lg:top-[8rem] z-10 xl:max-w-[47.25rem] md:max-w-[44.25rem] sm:max-w-[30rem]  xl:text-[3.75rem] md:text-[2.75rem]  sm:text-[2rem] text-[#3F3F46] ">
+                                <h2 class="lg:absolute  2xl:top-[13rem] xl:top-[11rem] lg:top-[8rem] z-10 xl:max-w-[47.25rem] md:max-w-[44.25rem] sm:max-w-[30rem] max-w-[25rem] xl:text-[3.75rem] md:text-[2.75rem] sm:text-[2rem] text-[1.8rem] text-[#3F3F46] ">
                                     California’s Computed Tomography (CT) Experts
                                 </h2>
-                                <p class="xl:text-[1rem] xl:max-w-[30.7rem] text-[#3F3F46]">Accurate and Fast CT
+                                <p class="xl:text-[1rem] xl:max-w-[30.7rem] text-[#3F3F46] md:max-w-[35rem] max-w-[25rem]">Accurate and Fast CT
                                     Services, With Convenient Locations Throughout Southern California</p>
                             </div>
                             <div class="content-quality flex flex-col gap-4 lg:mb-10 mb-6">
@@ -58,7 +58,7 @@
                                 </div>
                             </div>
                             <a href="#"
-                                class="content-button max-w-[15.4rem] flex px-[2.5rem] py-[0.88rem] bg-[#2563EB] rounded-[2.75rem] gap-2">
+                                class="content-button sm:max-w-[15.4rem] max-w-[12.4rem] flex sm:px-[2.5rem] px-[1.2rem] sm:py-[0.88rem] py-[.75rem] bg-[#2563EB] rounded-[2.75rem] gap-2">
                                 <img src="/assets/svg/account-right.svg"
                                     alt="logo of account with right symbol in bottom">
                                 <p class="text-[#fff] text-[1rem]">Book your scan</p>
@@ -73,41 +73,45 @@
                 </div>
             </section>
 
-            <section
-                class="location-base-section xl:py-[9.4rem] md:py-[5rem] py-12 bg-[#EEF2FF] sm:mb-[6.25rem] mb-12 sm:px-0 px-[1.2rem]">
-                <div class="container mx-auto flex flex-col items-start lg:gap-8 gap-4 ">
+            <section class="location-base-section xl:py-[9.4rem] md:py-[5rem] py-8 bg-[#EEF2FF] sm:mb-[6.25rem] mb-10  relative">
+                <span class="overlay-span absolute top-0 left-0 w-full h-full md:opacity-0 opacity-100 bg-[#ffffff80] z-0"></span>
+                <div class="container mx-auto flex flex-col items-start lg:gap-8 gap-4 relative ">
                     <div class="location-header flex flex-col gap-5">
-                        <h2 class="text-[#27272A] xl:text-[3.75rem] sm:text-[2.75rem] text-8 lg:max-w-[51rem]">Located
+                        <h2 class="text-[#27272A] xl:text-[3.75rem] sm:text-[2.75rem] text-[2rem] lg:max-w-[51rem]">
+                            Located
                             Across California, Book your Scan now </h2>
-                        <p class="text-[#3F3F46] sm:text-[1rem] text-[0.875rem] lg:max-w-[61.8rem]">Discover excellence
+                        <p class="text-[#3F3F46] sm:text-[1rem] text-[0.875rem] lg:max-w-[45rem] xl:max-w-[61rem] sm:max-w-[31rem] max-w-[25rem]">Discover excellence
                             in diagnostics at California's foremost Stand-Up MRI center.
                             Our state-of-the-art facility combines advanced technology with expert care, setting a new
                             benchmark for precise and comfortable imaging.
                         </p>
                     </div>
-                    <div class="counting-div flex  justify-start items-center xl:gap-[12rem] md:gap-[5rem] ">
+                    <div class="counting-div flex flex-col sm:flex-row  sm:justify-start sm:items-center items-start xl:gap-[12rem] md:gap-[5rem] sm:gap-8">
                         <div class="counting flex flex-col gap-[0.62rem]  py-[0.62rem]">
-                            <h2 class="xl:text-[3.75rem] md:text-[2.75rem] text-[#3F3F46] max-w-[9.3rem] relative">
-                                170k
+                            <h3 class="counter-text xl:text-[3.75rem] md:text-[2.75rem] text-[2rem] text-[#3F3F46] max-w-[9.3rem] relative"
+                                data-target="173">
+                                <span class="counter-value">0k</span>
                                 <img src="/assets/svg/plus-sign.svg" alt="plus sign"
-                                    class="absolute top-0 xl:right-[-1.25rem] right-0">
-                            </h2>
+                                    class="absolute sm:top-0 top-0 xl:right-[-2.25rem] sm:right-0 right-8">
+                            </h3>
                             <p class="text-[1rem] text-[#3f3f46]">Scan completed</p>
                         </div>
                         <div class="counting flex flex-col gap-[0.62rem]  py-[0.62rem]">
-                            <h2 class="xl:text-[3.75rem] md:text-[2.75rem] text-[#3F3F46] max-w-[9.3rem] relative">
-                                85k
+                            <h3 class="counter-text xl:text-[3.75rem] md:text-[2.75rem] text-[2rem] text-[#3F3F46] max-w-[9.3rem] relative"
+                                data-target="85">
+                                <span class="counter-value">0k</span>
                                 <img src="/assets/svg/plus-sign.svg" alt="plus sign"
-                                    class="absolute top-0 xl:right-[-1.25rem] right-0">
-                            </h2>
+                                    class="absolute sm:top-0 top-0 xl:right-[-1.25rem] sm:right-0 right-8">
+                            </h3>
                             <p class="text-[1rem] text-[#3f3f46]">Patient’s Served</p>
                         </div>
                         <div class="counting flex flex-col gap-[0.62rem]  py-[0.62rem]">
-                            <h2 class="xl:text-[3.75rem] md:text-[2.75rem] text-[#3F3F46] max-w-[9.3rem] relative">
-                                6k
+                            <h3 class="counter-text xl:text-[3.75rem] md:text-[2.75rem] text-[2rem] text-[#3F3F46] max-w-[9.3rem] relative"
+                                data-target="6.8">
+                                <span class="counter-value">0k</span>
                                 <img src="/assets/svg/plus-sign.svg" alt="plus sign"
-                                    class="absolute top-0 xl:right-[-1.25rem] right-0">
-                            </h2>
+                                    class="absolute sm:top-[.5rem] top-0 xl:right-[1.75rem] sm:right-20  lg:right-12 right-[5rem]">
+                            </h3>
                             <p class="text-[1rem] text-[#3f3f46] max-w-[11rem]">Doctor’s & Physicians Worked with us</p>
                         </div>
 
@@ -115,10 +119,10 @@
                 </div>
             </section>
 
-            <section class="computed-tomography sm:mb-[5.44rem] mb-12 sm:px-0 px-[1.2rem]">
+            <section class="computed-tomography sm:mb-[5.44rem] mb-10 ">
                 <div class="container mx-auto flex flex-col gap-10">
                     <div class="ct-header flex flex-col gap-6">
-                        <h2 class="xl:text-[3.75rem] sm:text-[2.75rem] text-8 text-[#3F3F46]">What is Computed
+                        <h2 class="xl:text-[3.75rem] sm:text-[2.75rem] text-[2rem] text-[#3F3F46]">What is Computed
                             Tomography (CT) </h2>
                         <p class="text-[1rem] text-[#3F3F46] max-w-[72.5rem]">
                             Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet.
@@ -146,9 +150,10 @@
                         <div
                             class="ct-grid-content flex flex-col lg:gap-10 gap-8 items-center justify-center xl:py-[8.5rem] xl:px-[3.5rem] sm:py-[5rem] sm:px-[1.5rem] py-[4rem] px-[1rem] lg:col-span-6 col-span-12 rounded-[1.25rem] ">
                             <h3 class="xl:text-[2rem] sm:text-[1.5rem] text-[1rem] text-[#3F3F46] text-center">We’ve
-                                helped 15% of our patient’s through our early detection methods</h3>
+                                helped 15% of our patient’s through our early detection methods
+                            </h3>
                             <a href="#"
-                                class="content-button max-w-[15.4rem] flex px-[2.5rem] py-[0.88rem] bg-[#2563EB] rounded-[2.75rem] gap-2">
+                                class="content-button sm:max-w-[15.4rem] max-w-[12.4rem] flex sm:px-[2.5rem] px-[1.2rem] sm:py-[0.88rem] py-[.75rem] bg-[#2563EB] rounded-[2.75rem] gap-2">
                                 <img src="/assets/svg/account-right.svg"
                                     alt="logo of account with right symbol in bottom">
                                 <p class="text-[#fff] text-[1rem]">Book your scan</p>
@@ -158,44 +163,42 @@
                 </div>
             </section>
 
-            <section class="helped-section sm:px-0 px-[1.2rem] sm:mb-[8.5rem] mb-12">
-                <div
-                    class="container mx-auto flex flex-col justify-center items-start text-left xl:gap-[5rem] sm:gap-[3rem] gap-8">
-                    <h2 class="helpe-header max-w-[78.5rem] text-[#3F3F46] xl:text-[3.75rem] sm:text-[2.75rem] text-8">
+            <section class="helped-section  sm:mb-[8.5rem] mb-10 ">
+                <div class="container mx-auto flex flex-col justify-center items-start text-left xl:gap-[5rem] sm:gap-[3rem] gap-8 ">
+                    <h2 class="helpe-header max-w-[78.5rem] text-[#3F3F46] xl:text-[3.75rem] sm:text-[2.75rem] text-[2rem]">
                         We’ve helped 15% of our patient’s through our early detection methods</h2>
-                    <div
-                        class="helped-grid-box grid grid-cols-12 2xl:gap-x-[8rem] xl:gap-x-[4rem] lg:gap-x-[3rem] md:gap-x-8 gap-y-8">
-                        <div class="grid-box flex flex-col items-start gap-4 lg:col-span-4  col-span-12 ">
+                    <div class="helped-grid-box w-full grid grid-cols-12 2xl:gap-x-[8rem] xl:gap-x-[4rem] lg:gap-x-[3rem] md:gap-x-8 gap-y-8 ">
+                        <div class="grid-box flex flex-col md:items-start items-center gap-4 lg:col-span-4 md:col-span-6 col-span-12 ">
                             <div
                                 class="w-[3.75rem] h-[3.75rem] rounded-full bg-[#E0E7FF] flex justify-center items-center">
                                 <img src="/assets/svg/aid-kit-box.svg" alt="">
                             </div>
                             <h3 class="text-[2rem] text-[#3F3F46]">Book Your scan</h3>
-                            <p class="text-[1rem] text-[#3F3F46] max-w-[30rem]">
+                            <p class="text-[1rem] text-[#3F3F46] md:max-w-[30rem] max-w-[25rem] md:text-left text-center">
                                 Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
                                 Facilisis mauris sit amet massa vitae tortor. Pharetra pharetra massa massa ultricies mi
                                 quis hendrerit.
                             </p>
                         </div>
-                        <div class="grid-box flex flex-col items-start gap-4 lg:col-span-4  col-span-12 ">
+                        <div class="grid-box flex flex-col md:items-start items-center gap-4 lg:col-span-4 md:col-span-6 col-span-12 ">
                             <div
                                 class="w-[3.75rem] h-[3.75rem] rounded-full bg-[#E0E7FF] flex justify-center items-center">
                                 <img src="/assets/svg/peoples.svg" alt="">
                             </div>
-                            <h3 class="text-[2rem] text-[#3F3F46]">Book Your scan</h3>
-                            <p class="text-[1rem] text-[#3F3F46] max-w-[30rem]">
+                            <h3 class="text-[2rem] text-[#3F3F46]">Prepare for Scan</h3>
+                            <p class="text-[1rem] text-[#3F3F46] md:max-w-[30rem] max-w-[25rem] md:text-left text-center">
                                 Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
                                 Facilisis mauris sit amet massa vitae tortor. Pharetra pharetra massa massa ultricies mi
                                 quis hendrerit.
                             </p>
                         </div>
-                        <div class="grid-box flex flex-col items-start gap-4 lg:col-span-4  col-span-12 ">
+                        <div class="grid-box flex flex-col md:items-start items-center gap-4 lg:col-span-4 md:col-span-6 col-span-12 ">
                             <div
                                 class="w-[3.75rem] h-[3.75rem] rounded-full bg-[#E0E7FF] flex justify-center items-center">
                                 <img src="/assets/svg/Report.svg" alt="">
                             </div>
-                            <h3 class="text-[2rem] text-[#3F3F46]">Book Your scan</h3>
-                            <p class="text-[1rem] text-[#3F3F46] max-w-[30rem]">
+                            <h3 class="text-[2rem] text-[#3F3F46]">Get your result</h3>
+                            <p class="text-[1rem] text-[#3F3F46] md:max-w-[30rem] max-w-[25rem] md:text-left text-center">
                                 Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
                                 Facilisis mauris sit amet massa vitae tortor. Pharetra pharetra massa massa ultricies mi
                                 quis hendrerit.
@@ -207,13 +210,15 @@
 
             </section>
 
-            <section class="helped-banner sm:mb-[8.5rem] mb-12">
-                <div class="banner-main w-full flex flex-col lg:relative">
+            <section class="helped-banner sm:mb-[8.5rem] mb-10 ">
+                <div class="banner-main w-full flex flex-col lg:relative ">
                     <img src="/assets/images/helped-banner.png" alt="mri patient" class="w-full h-full object-cover ">
                     <div
-                        class="helped-banner-content lg:absolute left-0 bottom-0 flex flex-col items-center justify-center gap-12 xl:px-[8.5rem] md:px-[4rem] py-[4.3rem] xl:max-w-[59.5rem] lg:max-w-[45.5rem] lg:rounded-tr-[1.25rem] bg-[#E0E7FF] ">
-                        <h3 class="text-[2rem] text-[#3F3F46] text-center max-w-[42rem]">We have helped 15% of our
-                            members identify potential diseases early. </h3>
+                        class="helped-banner-content lg:absolute left-0 bottom-0 flex flex-col items-center justify-center gap-12 xl:px-[8.5rem] md:px-[4rem] py-[4.3rem] px-4 xl:max-w-[59.5rem] lg:max-w-[45.5rem] lg:rounded-tr-[1.25rem]  bg-[#E0E7FF] ">
+                        <h3 class="sm:text-[2rem] text-[1.5rem] text-[#3F3F46] text-center max-w-[42rem]">We have helped
+                            15% of our
+                            members identify potential diseases early.
+                        </h3>
                         <a href="#"
                             class="content-button max-w-[15.4rem] flex px-[2.5rem] py-[0.88rem] bg-[#2563EB] rounded-[2.75rem] gap-2">
                             <img src="/assets/svg/account-right.svg" alt="logo of account with right symbol in bottom">
@@ -223,19 +228,21 @@
                 </div>
             </section>
 
-            <section class="customer-review sm:mb-[8.5rem] mb-12">
+            <section class="customer-review sm:mb-[8.5rem] mb-10 ">
                 <div class="swiper testimonialSwiper ">
-                    <div class="container mx-auto flex items-center justify-between lg:mb-[2.5rem] ">
+                    <div class="container mx-auto flex items-center justify-between lg:mb-[2.5rem] sm:mb-[2.5rem] mb-4">
                         <h2 class="xl:text-[3.75rem] sm:text-[2.75rem] text-[2rem] text-[#3F3F46]">Customer’s Reviews
                         </h2>
-                        <div class="flex gap-[2.5rem]">
+                        <div class="flex sm:gap-[1.5rem] gap-2">
                             <div class="prev" id="prev">
-                                <button class="prev-btn flex justify-center items-center w-[2.75rem] h-[2.75rem] rounded-full ">
+                                <button
+                                    class="prev-btn flex justify-center items-center sm:w-[2.75rem] w-[2.2rem] sm:h-[2.75rem] h-[2.2rem] rounded-full ">
                                     <img src="/assets/svg/left-arrow.svg" alt="">
                                 </button>
                             </div>
                             <div class="next" id="next">
-                                <button class="next-btn flex justify-center items-center w-[2.75rem] h-[2.75rem] rounded-full ">
+                                <button
+                                    class="next-btn flex justify-center items-center sm:w-[2.75rem] w-[2.2rem] sm:h-[2.75rem] h-[2.2rem] rounded-full ">
                                     <img src="/assets/svg/right-arrow.svg" alt="">
                                 </button>
                             </div>
@@ -308,7 +315,7 @@
 
                     </div>
 
-                    
+
 
                 </div>
             </section>
@@ -316,20 +323,20 @@
         </main>
 
     </div>
+    <script src="/assets/js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-
         const swiper = new Swiper(".testimonialSwiper", {
             slidesPerView: 3,
             spaceBetween: 50,
-            loop:true,
+            loop: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
             navigation: {
-                nextEl: '.next',
-                prevEl: '.prev',
+                nextEl: ".next",
+                prevEl: ".prev",
             },
             breakpoints: {
                 0: {
@@ -344,7 +351,7 @@
                     slidesPerView: 3,
                     spaceBetween: 20,
                 },
-            }
+            },
         });
     </script>
 

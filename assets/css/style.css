@@ -4,6 +4,22 @@
 .border1 {
   border: 1px solid red;
 }
+.container {
+  width: 100%;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.77) 118.11%
+  );
+  backdrop-filter: blur(12px);
+}
 .logo-div a p {
   font-family: "Work Sans";
   font-size: 0.875;
@@ -19,11 +35,10 @@
   background-position: center;
 }
 .content-inner .content-header h2 {
-  /* font-family: "Plus Jakarta Sans"; */
-  /* font-size: 1.75rem; */
+  font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 5.25rem */
+  line-height: 140%;
   letter-spacing: 0.0375rem;
 }
 .content-inner .content-header p {
@@ -36,7 +51,6 @@
 }
 .content-quality div p {
   font-family: "Work Sans";
-  /* font-size: 0.875rem; */
   font-style: normal;
   font-weight: 600;
   line-height: 180%;
@@ -44,7 +58,6 @@
 }
 .content-inner .content-button p {
   font-family: "Work Sans";
-  /* font-size: 1rem; */
   font-style: normal;
   font-weight: 600;
   line-height: 180%;
@@ -64,7 +77,7 @@
   line-height: 180%;
   letter-spacing: 0.01rem;
 }
-.counting-div .counting h2 {
+.counting-div .counting h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
@@ -110,7 +123,7 @@
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
-  line-height: 130%; /* 2.6rem */
+  line-height: 130%;
   letter-spacing: 0.02rem;
 }
 
@@ -118,14 +131,14 @@
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 5.25rem */
+  line-height: 140%;
   letter-spacing: 0.0375rem;
 }
 .grid-box h3 {
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
-  line-height: 130%; /* 2.6rem */
+  line-height: 130%;
   letter-spacing: 0.02rem;
 }
 .grid-box p {
@@ -139,7 +152,7 @@
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
-  line-height: 130%; /* 2.6rem */
+  line-height: 130%;
   letter-spacing: 0.02rem;
 }
 
@@ -147,11 +160,10 @@
   font-family: "Plus Jakarta Sans";
   font-style: normal;
   font-weight: 600;
-  line-height: 140%; /* 5.25rem */
+  line-height: 140%;
   letter-spacing: 0.0375rem;
 }
 .review-btn-box button {
-    
 }
 
 .swiper {
@@ -174,23 +186,24 @@
   height: auto;
   object-fit: cover;
 }
-.swiper-button-next::after{
-    display: none;
+.swiper-button-next::after {
+  display: none;
 }
-.swiper-button-prev::after{
-    display: none;
+.swiper-button-prev::after {
+  display: none;
 }
-.prev-btn, .next-btn {
-    border: 1px solid #3F3F46;
-}
-/* #prev{
-    position: absolute;
-    top: 0;
-    right: 28rem;
+.prev-btn,
+.next-btn {
+  border: 1px solid #3f3f46;
 }
 
-#next{
-    position: absolute;
-    top: 0;
-    right: 23rem;
-} */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .hero-section .container {
+    background-position: 99px -32px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 639px) {
+  .location-base-section {
+    background-position: bottom;
+  }
+}
