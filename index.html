@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CT Scan</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/src/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
@@ -32,15 +32,19 @@
             </div>
         </header>
         <main class="w-full h-auto ">
-            <section class="hero-section sm:mb-[6.25rem] mb-10 ">
-                <div class="container mx-auto flex lg:flex-row lg:gap-0 gap-8 flex-col justify-between md:items-center items-start">
-                    <div class="hero-content flex items-center">
+            <section class="hero-section sm:mb-[6.25rem] mb-10 relative">
+                <span class="gradient-span absolute h-full w-full top-0 right-0 hidden lg:block"></span>
+                <div class="container mx-auto flex  items-start rounded-[1.25rem] relative">
+                    <span class="hero-overlay absolute w-full h-full top-0 left-0 block xl:hidden rounded-[1.25rem]"></span>
+                    <div class="hero-content flex items-center my-[8.375rem] z-10 relative">
                         <div class="content-inner flex flex-col gap-6 xl:mt-6 lg:mt-[6.5rem]">
-                            <div class="content-header flex flex-col gap-4">
-                                <h2 class="lg:absolute  2xl:top-[13rem] xl:top-[11rem] lg:top-[8rem] z-10 xl:max-w-[47.25rem] md:max-w-[44.25rem] sm:max-w-[30rem] max-w-[25rem] xl:text-[3.75rem] md:text-[2.75rem] sm:text-[2rem] text-[1.8rem] text-[#3F3F46] ">
+                            <div class="content-header flex flex-col gap-4 ">
+                                <h2 class="  xl:max-w-[47.25rem] md:max-w-[44.25rem] sm:max-w-[30rem] max-w-[25rem] xl:text-[3.75rem] md:text-[2.75rem] sm:text-[2rem] text-[1.8rem] text-[#3F3F46] ">
                                     California’s Computed Tomography (CT) Experts
                                 </h2>
-                                <p class="xl:text-[1rem] xl:max-w-[30.7rem] text-[#3F3F46] md:max-w-[35rem] max-w-[25rem]">Accurate and Fast CT
+                                <p
+                                    class="xl:text-[1rem] xl:max-w-[30.7rem] text-[#3F3F46] md:max-w-[35rem] max-w-[25rem]">
+                                    Accurate and Fast CT
                                     Services, With Convenient Locations Throughout Southern California</p>
                             </div>
                             <div class="content-quality flex flex-col gap-4 lg:mb-10 mb-6">
@@ -66,27 +70,30 @@
                         </div>
 
                     </div>
-                    <div class="hero-banner w-auto h-auto">
+                    <!-- <div class="hero-banner w-auto h-auto">
                         <img src="/assets/images/hero-banner-img.png" alt="doctor operating  a CT scanner with patient"
                             class="rounded-[1.25rem]">
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
             <section class="location-base-section xl:py-[9.4rem] md:py-[5rem] py-8 bg-[#EEF2FF] sm:mb-[6.25rem] mb-10  relative">
-                <span class="overlay-span absolute top-0 left-0 w-full h-full md:opacity-0 opacity-100 bg-[#ffffff80] z-0"></span>
-                <div class="container mx-auto flex flex-col items-start lg:gap-8 gap-4 relative ">
+                <span class="overlay-span absolute top-0 left-0 w-full h-full lg:opacity-0 opacity-100 bg-[#eef2ff80] z-0"></span>
+                <div class="container mx-auto flex flex-col items-start lg:gap-8 gap-4 relative z-20">
                     <div class="location-header flex flex-col gap-5">
                         <h2 class="text-[#27272A] xl:text-[3.75rem] sm:text-[2.75rem] text-[2rem] lg:max-w-[51rem]">
                             Located
                             Across California, Book your Scan now </h2>
-                        <p class="text-[#3F3F46] sm:text-[1rem] text-[0.875rem] lg:max-w-[45rem] xl:max-w-[61rem] sm:max-w-[31rem] max-w-[25rem]">Discover excellence
-                            in diagnostics at California's foremost Stand-Up MRI center.
+                        <p
+                            class="text-[#3F3F46] sm:text-[1rem] text-[0.875rem] lg:max-w-[45rem] xl:max-w-[61rem] sm:max-w-[31rem] max-w-[25rem]">
+                            Discover excellence
+                            in diagnostics at California's foremost Stand-Up CT center.
                             Our state-of-the-art facility combines advanced technology with expert care, setting a new
                             benchmark for precise and comfortable imaging.
                         </p>
                     </div>
-                    <div class="counting-div flex flex-col sm:flex-row  sm:justify-start sm:items-center items-start xl:gap-[12rem] md:gap-[5rem] sm:gap-8">
+                    <div
+                        class="counting-div flex flex-col sm:flex-row  sm:justify-start sm:items-center items-start xl:gap-[12rem] md:gap-[5rem] sm:gap-8">
                         <div class="counting flex flex-col gap-[0.62rem]  py-[0.62rem]">
                             <h3 class="counter-text xl:text-[3.75rem] md:text-[2.75rem] text-[2rem] text-[#3F3F46] max-w-[9.3rem] relative"
                                 data-target="173">
@@ -125,17 +132,16 @@
                         <h2 class="xl:text-[3.75rem] sm:text-[2.75rem] text-[2rem] text-[#3F3F46]">What is Computed
                             Tomography (CT) </h2>
                         <p class="text-[1rem] text-[#3F3F46] max-w-[72.5rem]">
-                            Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet.
-                            Integer feugiat scelerisque varius morbi enim nunc.
-                            Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.
-                            Vitae tortor condimentum lacinia quis vel eros donec ac odio.
-                            Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet.
-                            Integer feugiat scelerisque varius morbi enim nunc.
+                            A CT scan, or computed tomography scan, is a medical imaging technique that uses X-ray
+                            technology
+                            to create detailed cross-sectional images of the body. The name "computed tomography"
+                            reflects the
+                            process by which the images are generated.
                         </p>
                         <p class="text-[1rem] text-[#3F3F46] max-w-[72.5rem]">
-                            Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet.
-                            Integer feugiat scelerisque varius morbi enim nunc.
-                            Tortor pretium viverra suspendisse potenti nullam ac tortor vitae.
+                            Unlike traditional X-rays, which produce 2D images, CT scans provide three-dimensional views
+                            of
+                            the internal structures of the body.
                         </p>
                     </div>
                     <div class="ct-image-grid grid grid-cols-12 lg:gap-x-8 md:gap-x-5 gap-y-8 ">
@@ -149,7 +155,9 @@
                         </div>
                         <div
                             class="ct-grid-content flex flex-col lg:gap-10 gap-8 items-center justify-center xl:py-[8.5rem] xl:px-[3.5rem] sm:py-[5rem] sm:px-[1.5rem] py-[4rem] px-[1rem] lg:col-span-6 col-span-12 rounded-[1.25rem] ">
-                            <h3 class="xl:text-[2rem] sm:text-[1.5rem] text-[1rem] text-[#3F3F46] text-center">We’ve
+                            <h3
+                                class="xl:text-[2rem] text-[1.5rem] xl:max-w-full sm:max-w-[30rem] max-w-[25rem] text-[#3F3F46] text-center">
+                                We’ve
                                 helped 15% of our patient’s through our early detection methods
                             </h3>
                             <a href="#"
@@ -164,44 +172,48 @@
             </section>
 
             <section class="helped-section  sm:mb-[8.5rem] mb-10 ">
-                <div class="container mx-auto flex flex-col justify-center items-start text-left xl:gap-[5rem] sm:gap-[3rem] gap-8 ">
-                    <h2 class="helpe-header max-w-[78.5rem] text-[#3F3F46] xl:text-[3.75rem] sm:text-[2.75rem] text-[2rem]">
+                <div
+                    class="container mx-auto flex flex-col justify-center items-start text-left xl:gap-[5rem] sm:gap-[3rem] gap-8 ">
+                    <h2
+                        class="helpe-header max-w-[78.5rem] text-[#3F3F46] xl:text-[3.75rem] sm:text-[2.75rem] text-[2rem] md:text-left text-center">
                         We’ve helped 15% of our patient’s through our early detection methods</h2>
-                    <div class="helped-grid-box w-full grid grid-cols-12 2xl:gap-x-[8rem] xl:gap-x-[4rem] lg:gap-x-[3rem] md:gap-x-8 gap-y-8 ">
-                        <div class="grid-box flex flex-col md:items-start items-center gap-4 lg:col-span-4 md:col-span-6 col-span-12 ">
+                    <div
+                        class="helped-grid-box w-full grid grid-cols-12 2xl:gap-x-[8rem] xl:gap-x-[4rem] lg:gap-x-[3rem] md:gap-x-8 gap-y-8 ">
+                        <div
+                            class="grid-box flex flex-col md:items-start items-center gap-4 lg:col-span-4 md:col-span-6 col-span-12 ">
                             <div
                                 class="w-[3.75rem] h-[3.75rem] rounded-full bg-[#E0E7FF] flex justify-center items-center">
                                 <img src="/assets/svg/aid-kit-box.svg" alt="">
                             </div>
                             <h3 class="text-[2rem] text-[#3F3F46]">Book Your scan</h3>
-                            <p class="text-[1rem] text-[#3F3F46] md:max-w-[30rem] max-w-[25rem] md:text-left text-center">
-                                Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
-                                Facilisis mauris sit amet massa vitae tortor. Pharetra pharetra massa massa ultricies mi
-                                quis hendrerit.
+                            <p
+                                class="text-[1rem] text-[#3F3F46] md:max-w-[30rem] max-w-[25rem] md:text-left text-center">
+                                Complete the form with patient information and schedule an appointment for CT or give a
+                                call to book.
                             </p>
                         </div>
-                        <div class="grid-box flex flex-col md:items-start items-center gap-4 lg:col-span-4 md:col-span-6 col-span-12 ">
+                        <div
+                            class="grid-box flex flex-col md:items-start items-center gap-4 lg:col-span-4 md:col-span-6 col-span-12 ">
                             <div
                                 class="w-[3.75rem] h-[3.75rem] rounded-full bg-[#E0E7FF] flex justify-center items-center">
                                 <img src="/assets/svg/peoples.svg" alt="">
                             </div>
                             <h3 class="text-[2rem] text-[#3F3F46]">Prepare for Scan</h3>
-                            <p class="text-[1rem] text-[#3F3F46] md:max-w-[30rem] max-w-[25rem] md:text-left text-center">
-                                Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
-                                Facilisis mauris sit amet massa vitae tortor. Pharetra pharetra massa massa ultricies mi
-                                quis hendrerit.
+                            <p
+                                class="text-[1rem] text-[#3F3F46] md:max-w-[30rem] max-w-[25rem] md:text-left text-center">
+                                Schedule your CT appointment via our website or give us a call for the same.
                             </p>
                         </div>
-                        <div class="grid-box flex flex-col md:items-start items-center gap-4 lg:col-span-4 md:col-span-6 col-span-12 ">
+                        <div
+                            class="grid-box flex flex-col md:items-start items-center gap-4 lg:col-span-4 md:col-span-6 col-span-12 ">
                             <div
                                 class="w-[3.75rem] h-[3.75rem] rounded-full bg-[#E0E7FF] flex justify-center items-center">
                                 <img src="/assets/svg/Report.svg" alt="">
                             </div>
                             <h3 class="text-[2rem] text-[#3F3F46]">Get your result</h3>
-                            <p class="text-[1rem] text-[#3F3F46] md:max-w-[30rem] max-w-[25rem] md:text-left text-center">
-                                Quis blandit turpis cursus in hac habitasse platea dictumst quisque.
-                                Facilisis mauris sit amet massa vitae tortor. Pharetra pharetra massa massa ultricies mi
-                                quis hendrerit.
+                            <p
+                                class="text-[1rem] text-[#3F3F46] md:max-w-[30rem] max-w-[25rem] md:text-left text-center">
+                                Our experts will help your prepare for your CT and complete the process with utmost care
                             </p>
                         </div>
 
@@ -215,7 +227,9 @@
                     <img src="/assets/images/helped-banner.png" alt="mri patient" class="w-full h-full object-cover ">
                     <div
                         class="helped-banner-content lg:absolute left-0 bottom-0 flex flex-col items-center justify-center gap-12 xl:px-[8.5rem] md:px-[4rem] py-[4.3rem] px-4 xl:max-w-[59.5rem] lg:max-w-[45.5rem] lg:rounded-tr-[1.25rem]  bg-[#E0E7FF] ">
-                        <h3 class="sm:text-[2rem] text-[1.5rem] text-[#3F3F46] text-center max-w-[42rem]">We have helped
+                        <h3
+                            class="sm:text-[2rem] text-[1.5rem] text-[#3F3F46] text-center sm:max-w-full  max-w-[25rem] ">
+                            We have helped
                             15% of our
                             members identify potential diseases early.
                         </h3>
@@ -320,6 +334,162 @@
                 </div>
             </section>
 
+            <section class="lg:mb-20 mb-10">
+                <div class="container">
+                    <h2 class="lg:text-5xl text-center md:mb-10 mb-3 font-bold">Scan Related Questions</h2>
+                    <div>
+                        <div class="accordion-body">
+                            <div class="accordion">
+                                <div class="acc-container active">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        What is a CT scan, and how does it work?
+                                        <span class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span>
+                                    </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5">
+                                            A CT scan, or computed tomography scan, is a medical imaging technique that uses X-rays to create detailed 
+                                            cross-sectional images of the body. It works by passing X-ray beams through the body, and a computer 
+                                            processes the information to generate detailed images.
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="acc-container">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        Why might my doctor recommend a CT scan?
+                                        <span
+                                            class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span>
+                                    </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5"> 
+                                            CT scans are recommended to diagnose and evaluate a variety of medical conditions, 
+                                            including injuries, tumors, infections, and vascular diseases. They provide detailed 
+                                            images that aid in accurate diagnosis and treatment planning.
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="acc-container">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        Is a CT scan safe, and are there any risks involved?
+                                        <span class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span>
+                                    </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5"> While CT scans are generally safe, they expose patients to ionizing radiation. 
+                                            The benefits of obtaining detailed diagnostic information often outweigh the risks. 
+                                            Pregnant women are advised to inform their healthcare provider, as radiation exposure 
+                                            may pose risks to the developing fetus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="acc-container">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        How long does a CT scan take?
+                                        <span class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span>
+                                    </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5"> 
+                                            The duration of a CT scan varies depending on the body part being examined. 
+                                            In general, the procedure takes about 15 to 30 minutes, including preparation 
+                                            and image acquisition.
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="acc-container">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        How should I prepare for a CT scan?
+                                        <span class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span> </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5"> 
+                                            Preparation instructions may vary based on the specific type of CT scan. 
+                                            In general, you may be asked to avoid eating or drinking for a certain period before 
+                                            the scan, and you may need to remove metal objects from your body.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="acc-container">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        What should I expect during the CT scan procedure?
+                                        <span class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span> </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5"> 
+                                            You will lie on a table that moves through the CT scanner. 
+                                            The scanner may make buzzing or clicking noises. 
+                                            It's important to remain still during the scan to ensure clear images. 
+                                            The technologist will be in a separate room but can communicate with you.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="acc-container">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        Are there any side effects or discomfort associated with a CT scan?
+                                        <span class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span> </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5">
+                                            CT scans are non-invasive and generally painless. Some people may experience a warm sensation when a contrast dye is injected.
+                                            Rarely, individuals may be allergic to the contrast material, leading to mild reactions.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="acc-container">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        What is contrast material, and is it always used in CT scans?
+                                        <span class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span> </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5">
+                                            Contrast material (dye) may be used to enhance certain structures or 
+                                            blood vessels in the images. Not all CT scans require contrast. 
+                                            If contrast is needed, the technologist will explain the process, 
+                                            and you may need to have a blood test beforehand.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="acc-container">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        Can I eat or drink after the CT scan is completed?
+                                        <span class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span> </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5"> 
+                                            In most cases, you can resume your normal diet and activities immediately after a CT scan. 
+                                            However, if you received contrast material, you may be advised to drink extra fluids to help flush it out of your system.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="acc-container">
+                                    <h6 class="label lg:text-2xl md:text-xl text-base font-semibold relative flex justify-between">
+                                        When will I receive the results of my CT scan?
+                                        <span
+                                            class="toggle-icon shrink-0 w-7 h-7 flex justify-center flex-col items-center bg-violet-100 rounded-full">
+                                            <span></span> <span></span> </span> </h6>
+                                    <div class="content overflow-hidden">
+                                        <p class="pb-5">
+                                            The radiologist will interpret the images, and the results will be sent to your 
+                                            referring healthcare provider. Your provider will discuss the findings with you 
+                                            and determine the appropriate course of action based on the diagnostic information 
+                                            obtained from the CT scan. The timing of result availability may vary.
+                                        </p>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
     </div>
@@ -329,7 +499,7 @@
         const swiper = new Swiper(".testimonialSwiper", {
             slidesPerView: 3,
             spaceBetween: 50,
-            loop: true,
+            
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,

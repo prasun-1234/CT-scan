@@ -1,19 +1,16 @@
 function navbar() {
-  const header = document.querySelector(".ct-head");
+  let header = document.querySelector(".ct-head");
+  header.classList.add("default-nav");
 
-  let headerOffset = header.offsetTop;
-
-  function stickyHeader() {
-    if (window.pageYOffset > headerOffset) {
+  window.addEventListener("scroll", () => {
+    if (document.documentElement.scrollTop >= 120) {
+      header.classList.remove("default-nav");
       header.classList.add("sticky-nav");
     } else {
+      header.classList.add("default-nav");
       header.classList.remove("sticky-nav");
     }
-  }
-
-  window.onscroll = function () {
-    stickyHeader();
-  };
+  });
 }
 navbar();
 
@@ -63,3 +60,14 @@ function counterAnimation() {
 }
 
 counterAnimation();
+
+
+const accordion = document.querySelectorAll('.acc-container');
+accordion.forEach(item => {
+  item.addEventListener('click', () =>{
+    accordion.forEach(accItem => {
+      accItem.classList.remove('active');
+    });
+    item.classList.toggle('active');
+  })
+});
