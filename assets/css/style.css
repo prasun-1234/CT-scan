@@ -25,7 +25,7 @@
   line-height: 180%;
   letter-spacing: 0.03rem;
 }
-.hero-section .container {
+.hero-section .bg-container {
   background: url("/assets/images/hero-bg.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -40,6 +40,7 @@
   background-position: center;
   background-size: contain;
 }
+
 .content-inner .content-header h2 {
   font-weight: 600;
   line-height: 140%;
@@ -61,6 +62,8 @@
   line-height: 180%;
   letter-spacing: 0.03rem;
 }
+
+
 .location-header h2 {
   font-weight: 600;
   line-height: 140%;
@@ -88,6 +91,8 @@
   background-size: contain;
   background-position: right 0;
 }
+
+
 .computed-tomography .container h2 {
   font-weight: 600;
   line-height: 140%;
@@ -230,9 +235,25 @@
   transform: translate(0px, 0px);
 }
 
+ @media screen and (min-width:1536px){
+  .hero-section .bg-container{
+    background-position: right;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width:1280px) and (max-width:1535px){
+  .hero-section .container{
+    background-position: right;
+    background-size: contain;
+  }
+}
+  
+
+
 @media screen and (min-width: 1280px) {
   .hero-section .container {
-    background-position: right;
+    /* background-position: right; */
     background-size: contain;
   }
 }
@@ -275,3 +296,4 @@
     margin: 10px 0px 10px 0px;
   }
 }
+
