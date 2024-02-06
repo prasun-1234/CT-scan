@@ -25,12 +25,7 @@
   line-height: 180%;
   letter-spacing: 0.03rem;
 }
-.hero-section .bg-container {
-  background: url("/assets/images/hero-bg.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+
 .hero-section .container .hero-overlay{
   background: rgba(219, 219, 209,0.34);
 }
@@ -41,7 +36,7 @@
   background-size: contain;
 }
 
-.content-inner .content-header h2 {
+.hero-section .container .absolute-header  {
   font-weight: 600;
   line-height: 140%;
   letter-spacing: 0.0375rem;
@@ -247,7 +242,7 @@
   transform: translate(0px, 0px);
 }
 
- @media screen and (min-width:1536px){
+ /* @media screen and (min-width:1536px){
   .hero-section .bg-container{
     background-position: right;
     background-size: contain;
@@ -260,15 +255,14 @@
     background-size: contain;
   }
 }
-  
+   */
 
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .hero-section .container {
-    /* background-position: right; */
     background-size: contain;
   }
-}
+} */
 
 @media only screen and (max-width: 767px) {
   .accordion .content {
