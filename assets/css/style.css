@@ -424,14 +424,68 @@
   letter-spacing: 0.015rem;
 }
 
+.social-icon-link{
+  transition: .3s ease;
+}
+.social-icon-link:hover,
+.social-icon-link:hover svg path{
+  fill: #fff;
+  background-color: #1755f5;
+}
+
+
+
 .call-us-marquee h4 {
   font-family: "Plus Jakarta Sans";
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 170%; 
+  line-height: 170%;
   color: #fff;
   letter-spacing: 0.02rem;
+}
+
+.call-us-marquee .marquee-div {
+  display: flex;
+  width: fit-content;
+  flex-shrink: 0;
+  gap: 4.3rem;
+  justify-content: space-between;
+  animation: marqueeAnimation 130s linear infinite;
+}
+.marquee-div .marquee {
+  flex-shrink: 0;
+  position: relative;
+  width: auto;
+}
+.call-us-marquee .marquee-div:nth-child(2),
+.call-us-marquee .marquee-div:nth-child(3),
+.call-us-marquee .marquee-div:nth-child(4){
+  margin-left: 4rem;
+}
+
+.marquee .marquee-link::before{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #fff;
+  /* transition: 0.3s ease; */
+}
+.marquee .marquee-link:hover::before{
+  width: 100%;
+}
+
+
+@keyframes marqueeAnimation {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-3000px);
+  }
 }
 
 @media screen and (max-width: 1536px) {
@@ -445,12 +499,13 @@
   .xpert-mri {
     background-position: center center;
   }
+
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .cards-div .cards,
   .header-content {
-    width: 85%;
+    width: 100%;
     align-self: center;
   }
   .xpert-mri .cards-div {
@@ -462,6 +517,9 @@
   .xpert-mri {
     background-position: -14rem 11rem;
     background-size: 105rem 75rem;
+  }
+  .rating-container{
+    max-width: 95%;
   }
 }
 
@@ -482,6 +540,9 @@
   .rating-container {
     max-width: 40rem;
   }
+  .rating-container{
+    max-width: 95%;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -494,11 +555,17 @@
     background-size: 105rem 61rem;
   }
   .swiper-slide .slide-cards h5 {
-    max-width: 30rem;
+    max-width: 80%;
   }
-  .rating-container {
-    max-width: 30rem;
+  
+  .call-us-marquee h4{
+    font-size: 1.5rem;
   }
+  .call-us-marquee .marquee-div{
+    gap: 1.25rem;
+  }
+  
+
 }
 
 @media screen and (max-width: 425px) {
@@ -518,6 +585,13 @@
   .rating-container {
     max-width: 20rem;
   }
+  .call-us-section .call-content-header h3{
+    max-width: 15rem;
+  }
+  .call-us-marquee h4:first-child{
+    font-size: 1rem;
+  }
+  
 }
 @media screen and (max-width: 360px) {
   .xpert-mri {
